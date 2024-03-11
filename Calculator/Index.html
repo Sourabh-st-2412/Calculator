@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="col-sm-6">
+        <div class="Calculator">
+            <input type="text" class="Input" id="Display" readonly>
+            <input type="text" class="Result" id="DisplayResult" readonly>
+            <div class="Keys">
+               
+                <button class="AllClear" onclick="AllClear()"><bold>A.C</bold></button>
+                <button class="Clear" onclick="ClearDisplay()"><bold>Clear</bold></button>
+                <div class="invisible2">Calculator</div>
+                <button class="Calculate" onclick="Calculate()">=</button>
+
+                <button class="Operator" onclick="appendToDisplay('/')">/</button>
+                <button class="Val" onclick="appendToDisplay('7')">7</button>
+                <button class="Val" onclick="appendToDisplay('8')">8</button>
+                <button class="Val1" onclick="appendToDisplay('9')">9</button>
+
+                <button class="Operator" onclick="appendToDisplay('*')">*</button>
+                <button class="Val" onclick="appendToDisplay('4')">4</button>
+                <button class="Val" onclick="appendToDisplay('5')">5</button>
+                <button class="Val1" onclick="appendToDisplay('6')">6</button>
+                
+                <button class="Operator" onclick="appendToDisplay('-')">-</button>
+                <button class="Val" onclick="appendToDisplay('1')">1</button>
+                <button class="Val" onclick="appendToDisplay('2')">2</button>
+                <button class="Val1" onclick="appendToDisplay('3')">3</button>
+                
+                <button class="Operator" onclick="appendToDisplay('+')">+</button>
+                <button class="Val" onclick="appendToDisplay('0')">0</button>
+                <button class="Val , sym" onclick="appendToDisplay('.')">.</button>
+                <button class="Val1 , sym" onclick="appendToDisplay(' ')">_</button>
+
+               
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+           <input type="text" class="container" id="DisplayResult1" readonly>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
